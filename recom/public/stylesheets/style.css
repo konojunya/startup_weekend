@@ -1,0 +1,269 @@
+body,html{
+	width: 100%;
+	height: 100%;
+}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+._hidden{
+	display: none;
+}
+.mdl-layout__header-row{
+	padding: 0 20px;
+}
+.page-content{
+	background-color: #fafafa;
+}
+.main{
+	position: relative;
+}
+.title{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+/*
+*	loading
+*/
+.loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 100;
+	display: none;
+}
+.loading .sentence{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 1000;
+	width: 100%;
+	text-align: center;
+	height: 5rem;
+	line-height: 5rem;
+	color: white;
+}
+.loading .spinner{
+	position: fixed;
+	top: 100px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 1000;
+	height: 50px;
+	width: 50px;
+}
+
+/*
+*		live_list
+*/
+.live_list .mdl-card{
+	min-height: 0;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.live_list .live_image{
+	width: 100%;
+	height: 15rem;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.live_list .mdl-card__title{
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.8);
+	width: 100%;
+	text-indent: 15px;
+}
+.live_list .live_title{
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 5px;
+	display: block;
+}
+.live_list .live_card{
+	opacity: 0;
+}
+.live_list{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0%;
+	/*left: -100%;*/
+}
+
+/*
+*		live_detail
+*/
+.live_detail .back_to_list{
+	width: 100%;
+	background-color: #2C2C2C;
+	color: white;
+	padding: 10px 0;
+	border: 0;
+	outline: none;
+}
+.live_detail{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	/*left: 0%;*/
+}
+
+.live_detail .live_img{
+	width: 100%;
+	height: 20rem;
+	background-image: url("http://www.nishinoke.jp/tour2016/title2.png");
+	background-size: cover;
+	background-position: center center;
+}
+
+.live_detail .live_title{
+	font-size: 1.5rem;
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-top: 1px #404040 solid;
+	border-bottom: 1px #404040 solid;
+}
+
+.live_datas{
+	width: 90%;
+	margin: 0 auto;
+	padding: 1rem 0;
+	border-bottom: 1px #404040 solid;
+}
+.live_detail .live_date{
+	font-size: 1rem;
+}
+.live_detail .live_form{
+	width: 90%;
+	margin: 1rem auto;
+}
+.live_detail .live_form .num,
+.live_detail .live_form .time{
+	display: inline-block;
+	width: 30px;
+	min-width: 0;
+}
+.live_detail .live_form .place{
+	display: inline-block;
+	width: 100px;
+	min-width: 0;
+}
+
+
+/*
+*		main-route
+*/
+.main-route{
+	background-color: white;
+}
+.main-route .image{
+	width: 100%;
+}
+.main-route .image img{
+	display: block;
+	width: 100%;
+}
+.main-route .plans{
+	margin-bottom: 10%;
+	background-color: white;
+}
+.main-route .plan-item{
+	display: block;
+	width: 100%;
+	padding: 40px;
+	box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);
+}
+.main-route .plan-item .img{
+	width: 100%;
+}
+.main-route .plan-item .img img{
+	display: block;
+	width: 100%;
+}
+.main-route .flickity-prev-next-button{
+	background-color: rgba(0,0,0,0);
+	width: 25px;
+	height: 25px;
+}
+.main-route .target.you{
+	border-bottom: 1px solid #404040;
+}
+.main-route .target.lady{
+	border-bottom: 1px solid pink;
+}
+.main-route .target.cheap{
+	border-bottom: 1px solid #F9FF89;
+}
+.main-route .shop_name{
+	font-size: 1rem;
+	margin: 1rem 0 0;
+}
+.main-route .fav{
+	text-align: center;
+}
+.main-route .fav-btn{
+	display: inline-block;
+	margin: 0 auto 3rem;
+	padding: 15px;
+	outline: none;
+	border: 0;
+	background-color: #FF2263;
+	color: white;
+	border-radius: 50%;
+	box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);
+}
+.main-route .back-list{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+	outline: none;
+	border: 0;
+	background-color: #85868A;
+	letter-spacing: 4px;
+	color: white;
+}
+
+.love{
+	width: 80%;
+	height: 10rem;
+	line-height: 10rem;
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: white;
+	color: #FF2263;
+	text-align: center;
+	display: none;
+	z-index: 100000;
+}
